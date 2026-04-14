@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 
-import axios from "axios";
+//import axios from "axios";
 
 import GeneralContext from "./GeneralContext";
 
@@ -107,9 +107,7 @@ const WatchListItem = ({ stock }) => {
 const WatchListActions = ({ uid }) => {
   const generalContext = useContext(GeneralContext);
 
-  const handleBuyClick = () => {
-    generalContext.openBuyWindow(uid);
-  };
+  const handleBuyClick = () => { };
 
   return (
     <span className="actions">
@@ -119,7 +117,7 @@ const WatchListActions = ({ uid }) => {
           placement="top"
           arrow
           TransitionComponent={Grow}
-          // onClick={handleBuyClick}
+        // onClick={handleBuyClick}
         >
           <button className="buy">B</button>
         </Tooltip>
